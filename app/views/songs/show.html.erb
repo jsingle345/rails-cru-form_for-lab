@@ -1,0 +1,10 @@
+<h1><%= @song.name %></h1>
+
+<p>By Artist: <%= link_to "#{@song.artist.name}", artist_path(@song.artist)%></p>
+
+<p><%= link_to "#{@song.genre.name}", genre_path(@song.genre)%> Genre</p>
+<%=link_to "Edit", edit_song_path(@song) %>
+
+<%=link_to "Songs", songs_path %>
+
+<!-- link_to "Product", product_path(x.product_id) -->
